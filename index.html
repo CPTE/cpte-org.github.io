@@ -4,12 +4,27 @@
     <link rel="favicon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+        @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
         body {
-        font-family:'Lucida Console', monospace;
-        background: #1e1f26;
+            font-family: "Montserrat", sans-serif;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        background: linear-gradient(-45deg, #000000, #181818, #000000, #181818);
+	    background-size: 400% 400%;
+	    animation: gradient 15s ease infinite;
         text-align: center;
         color: white;
         overflow-wrap: break-word;
+        }
+
+        * {
+	        font-family: "Montserrat", sans-serif !important;
         }
 
         .card {
@@ -39,7 +54,7 @@
         padding: 16px;
         }
         a:link, a:visited {
-        background-color: rgb(90, 96, 116);
+        
         color: black;
         
         text-align: center;
@@ -57,31 +72,47 @@
         font-size:38px;
         }
     </style>
+    <script>
+      function showDonateDiv(){
+  var x = document.getElementById("donationDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function openGithub(){
+   window.open("https://github.com/cpte-org/Crypto-price-ticker-extension"); 
+}
+    </script>
   </head>
   <body>
-    <p>
-        <p style="font-size:3vw;">Just Crypto Ticker</p>
-        <br>
-    <p>
-        <img src="https://gitlab.com/nfl0/crypto-price-ticker-extension/-/raw/master/Docs/Demo.gif">
-    </p>
-    <p style="font-size:1.3vw;">
+    <h1 class="text-light">Just Crypto Ticker</h1>
+    
+
+    <br>
+    
+    <h3 class="text-light">
         Cross-browser extension, displays cryptocurrency price in usd.
+      </h3>
         <br><br>
-        <a href="https://github.com/cpte-org/Crypto-price-ticker-extension">Source</a>
-    </p>
-    1DtTKJJosqgF4NzJHBqwMXGWoYwtpBoxpx 
-    <p style="font-size:1.3vw;">
-          - Bitcoin : 1DtTKJJosqgF4NzJHBqwMXGWoYwtpBoxpx
+        <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+            <button class="d-block btn btn-outline-light" onclick="openGithub()"><i class="fab fa-github ml-2"></i> View Source</button>
+            <button class="d-block btn btn-outline-light" onclick="showDonateDiv()">Protect wildlife<i class="fa fa-heart ml-2"></i></button>
+        </div>
+    <div id="donationDiv" style="display: none; background-color: pink;">
+      - Bitcoin : 1DtTKJJosqgF4NzJHBqwMXGWoYwtpBoxpx
           <br>
           - Ethereum: 0x3AF9fE35D280ADA5a5edB1BEf3ED872a3231d73C
           <br>
           - Cardano : addr1q8h0we90q0n0zp8aupqxa662c43dvh04s7npu5yj9vltjm5jfsxx4s2ycuxm5629natextfld9cs54ms47carfk8r74q763jvs
-      </p>
+    </div>
+    </h2>
     
-    <p>
-        <img src="https://gitlab.com/nfl0/crypto-price-ticker-extension/-/raw/master/Docs/Demo.gif">
-    </p>
+    <br>
+    
+
+
     <div class="card card-1">
         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/btc.png" alt="Bitcoin"> Bitcoin<p/>
         <table>
@@ -191,5 +222,9 @@
             </tr>
         </table>
     </div>
+
+    <h6 class="text-light small font-weight-bold"><i class="fas fa-code"></i> Made with <i class="fas fa-heart"></i></h6>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
   </body>
 </html>
