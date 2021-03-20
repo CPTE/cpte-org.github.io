@@ -1,0 +1,646 @@
+html {
+    background-color: #f8fcee;
+    height: 100%
+}
+
+body,
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #eff4e2;
+    -webkit-box-shadow: 0 0 150px #fff;
+    box-shadow: 0 0 150px #fff;
+    color: #4f4f4f;
+    font-family: Source Sans Pro, Verdana, Geneva, sans-serif;
+    min-height: 100%;
+    margin: 0 auto;
+    max-width: 982px;
+    padding: 56px 116px
+}
+
+a {
+    color: #0c8f59
+}
+
+a:hover {
+    color: rgb(14, 175, 108)
+}
+
+.container-header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 15px 0;
+    width: 100%
+}
+
+.container-logo {
+    line-height: 0;
+    margin: 0 30px 0 0;
+    display: inline-block;
+    max-width: 320px;
+    width: 100%
+}
+
+.logo {
+    height: 80px;
+    width: 100%
+}
+
+.title-donation {
+    font-size: 24px
+}
+
+.breadcrumb-bar {
+    color: #555
+}
+
+.btn-bar {
+    cursor: default;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 28px
+}
+
+.btn-grid {
+    background: #fff;
+    -webkit-box-shadow: 4px 4px #e7ecdb;
+    box-shadow: 4px 4px #e7ecdb;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 752px;
+    padding: 16px
+}
+
+.btn {
+    color: #fff;
+    display: inline-block;
+    padding: 11px 17px;
+    text-decoration: none
+}
+
+.btn:hover {
+    color: #fff
+}
+
+.btn:not(:last-child) {
+    margin-right: 15px
+}
+
+.btn.btn-donate {
+    background-color: #ffd935;
+    border-radius: 6px;
+    -webkit-box-shadow: inset -2px -2px #cfb235;
+    box-shadow: inset -2px -2px #cfb235;
+    color: #4b4113;
+    float: right;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 0 auto;
+    outline: none;
+    padding: 13px 21px 14px 22px
+}
+
+.btn.btn-donate:hover {
+    background-color: #ffea91;
+    -webkit-box-shadow: inset -2px -2px #f5db6d, 0 0 12px #fff;
+    box-shadow: inset -2px -2px #f5db6d, 0 0 12px #fff;
+    color: #2a2306
+}
+
+.btn.btn-donate:active {
+    background-color: #ffd935;
+    -webkit-box-shadow: inset 0 0 5px #cfb235, 0 0 12px #fff;
+    box-shadow: inset 0 0 5px #cfb235, 0 0 12px #fff;
+    color: #2a2306;
+    margin: 3px 0 0 auto;
+    padding: 13px 19px 11px 22px
+}
+
+.btn-large {
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 17px;
+    width: 100%
+}
+
+.btn-text {
+    margin-left: 10px
+}
+
+.btn-github {
+    background-color: #24292e
+}
+
+.btn-github:hover {
+    background-color: rgb(66, 71, 76)
+}
+
+.btn-contact {
+    background-color: #007bbd
+}
+
+.btn-contact:hover {
+    background-color: rgb(0, 103, 158)
+}
+
+.btn-author {
+    background-color: #00bd7f
+}
+
+.btn-author:hover {
+    background-color: rgb(0, 158, 105)
+}
+
+.btn-bitcoin {
+    background-color: #f7931a
+}
+
+.btn-bitcoin:hover {
+    background-color: rgb(245, 135, 0)
+}
+
+.btn-monero {
+    background-color: #f26822
+}
+
+.btn-monero:hover {
+    background-color: rgb(237, 84, 7)
+}
+
+.btn-paypal {
+    background-color: #0070ba
+}
+
+.btn-paypal:hover {
+    background-color: rgb(0, 92, 153)
+}
+
+.btn-bank-transfer {
+    background-color: #4e4e4e
+}
+
+.btn-bank-transfer:hover {
+    background-color: rgb(67, 61, 61)
+}
+
+.btn-wallet {
+    background-color: #169cff
+}
+
+.btn-wallet:hover {
+    background-color: rgb(0, 143, 245)
+}
+
+.btn-browser {
+    background-color: #fff;
+    border-radius: 25px;
+    height: 82px;
+    width: 82px;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset -4px -4px #dee6ca;
+    box-shadow: inset -4px -4px #dee6ca;
+    cursor: pointer;
+    float: left;
+    outline: 0;
+    padding: 15px 19px 19px 15px
+}
+
+.btn-browser:not(:last-child) {
+    margin-right: 10px
+}
+
+.message-icon {
+    margin-right: 3px
+}
+
+.date {
+    background-color: #e1e7d3;
+    border-radius: 5px;
+    color: #7d7d7d;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 3px;
+    padding: 4px 7px 3px
+}
+
+.sub-title {
+    font-size: 25px;
+    font-style: italic;
+    white-space: nowrap
+}
+
+.log {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 6px;
+    max-width: 750px
+}
+
+.break-word {
+    word-wrap: break-word
+}
+
+.message-grid {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 48px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 752px
+}
+
+.message {
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+    -webkit-box-shadow: 4px 4px #e7ecdb;
+    box-shadow: 4px 4px #e7ecdb;
+    color: #575757;
+    overflow: hidden;
+    padding: 15px 15px 12px
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        opacity: .5
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .5
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: .5
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .5
+    }
+}
+
+@-webkit-keyframes slow-fade {
+    0% {
+        opacity: 1
+    }
+
+    30% {
+        opacity: 1
+    }
+
+    32% {
+        opacity: 0
+    }
+
+    58% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes slow-fade {
+    0% {
+        opacity: 1
+    }
+
+    30% {
+        opacity: 1
+    }
+
+    32% {
+        opacity: 0
+    }
+
+    58% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes short-flash {
+    0% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: 0
+    }
+
+    37% {
+        opacity: 1
+    }
+
+    53% {
+        opacity: 1
+    }
+
+    55% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes short-flash {
+    0% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: 0
+    }
+
+    37% {
+        opacity: 1
+    }
+
+    53% {
+        opacity: 1
+    }
+
+    55% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+.animation-donate .btn-icon:first-child {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: slow-fade;
+    animation-name: slow-fade
+}
+
+.animation-donate .btn-icon:last-child {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: short-flash;
+    animation-name: short-flash
+}
+
+.information-icon {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+    color: #575757
+}
+
+.information-icon.subtle-icon {
+    -webkit-animation: none;
+    animation: none;
+    color: #5f5f5f
+}
+
+.note,
+.side-note {
+    color: rgb(128, 128, 128);
+    font-weight: 400;
+    margin: 10px;
+    text-align: right
+}
+
+.note a,
+.side-note a {
+    color: rgb(71, 71, 71)
+}
+
+.note a:hover,
+.side-note a:hover {
+    color: rgb(3, 3, 3)
+}
+
+.side-note {
+    font-size: 14px;
+    margin: 15px 15px 35px
+}
+
+.semibold {
+    font-weight: 600
+}
+
+.message-information {
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    margin-top: 25px;
+    padding: 0
+}
+
+.message-header {
+    background-color: #f3f3f3;
+    border-right: 1px solid #e9e9e9;
+    font-size: 20px;
+    margin-right: 8px;
+    padding: 16px 14.4px;
+    padding: 1rem .9rem;
+    vertical-align: middle
+}
+
+.message-body,
+.message-header {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table-cell
+}
+
+.message-body {
+    background-color: #fff;
+    color: #5f5f5f;
+    font-weight: 400;
+    padding: 16px;
+    padding: 1rem
+}
+
+.message-warning {
+    color: #c57400
+}
+
+.message-success {
+    color: #339a6f
+}
+
+.message-success a {
+    color: #268f5c
+}
+
+.message-error {
+    color: #9a3333
+}
+
+.qr-code {
+    background-color: #fff;
+    -webkit-box-shadow: 4px 4px #e7ecdb;
+    box-shadow: 4px 4px #e7ecdb;
+    display: block;
+    max-width: 250px;
+    padding: 16px;
+    width: 85%
+}
+
+.message-donation {
+    font-size: 16px;
+    padding: 24px 15px;
+    text-align: center
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(../fonts/fonts-source-sans-pro-regular.woff2) format("woff2"), url(../fonts/fonts-source-sans-pro-regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(../fonts/fonts-source-sans-pro-semibold.woff2) format("woff2"), url(../fonts/fonts-source-sans-pro-semibold.woff) format("woff");
+    font-weight: 600
+}
+
+@media screen and (max-width:982px) {
+    html {
+        background-color: #eff4e2
+    }
+
+    body {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 28px 58px
+    }
+}
+
+@media screen and (max-width:815px) {
+    body {
+        padding: 18px 8px
+    }
+
+    .container {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%
+    }
+
+    .message-grid {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+@media (max-width:550px) {
+    .container-header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .container-logo {
+        margin-right: 0
+    }
+
+    .btn.btn-donate {
+        font-size: 16px;
+        margin-top: 5px
+    }
+
+    .btn.btn-donate:active {
+        margin-top: 8px
+    }
+}
+
+@media screen and (max-width:450px) {
+    .btn-grid {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .btn {
+        padding: 13px 18px 12px
+    }
+
+    .btn-large {
+        text-align: center
+    }
+
+    .btn-text {
+        display: none
+    }
+
+    .btn-text.btn-text-important {
+        display: inline
+    }
+}
+
+.coin-name {
+    background-color: #fff;
+    font-weight: bold;
+    margin-top: 10px;margin-left: 10px;margin-right: 45px;margin-bottom: 10px;
+    border-radius: 25px;
+    height: auto;
+    width: 300px;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset -4px -4px #dee6ca;
+    box-shadow: inset -4px -4px #dee6ca;
+    cursor: auto;
+    float: left;
+    outline: 0;
+    padding: 20px 90px 19px 20px
+}
+
+tr {
+    border-bottom: 1px solid #ccc; line-height: 1.8em;
+}
+img {
+    vertical-align:middle;
+}
+
+.demo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

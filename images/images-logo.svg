@@ -1,0 +1,12 @@
+<svg width="533" height="97" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <rect rx="3" id="svg_3" height="47" width="14" y="39.75757" x="7.7684" opacity="undefined" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#69ab90"/>
+  <rect rx="3" id="svg_5" height="47" width="14" y="11.75757" x="28.2684" opacity="undefined" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#69ab90"/>
+  <rect rx="3" id="svg_6" height="47" width="14" y="25.75757" x="48.2684" opacity="undefined" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#69ab90"/>
+  <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Nunito Black'" font-size="31" id="svg_7" y="75.75757" x="81.7684" opacity="undefined" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#69ab90">Coin Price Ticker Extension</text>
+  <text style="cursor: move;" font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Nunito Black'" font-size="31" id="svg_8" y="37.75757" x="82.7684" opacity="undefined" stroke-dasharray="null" stroke-width="0" stroke="#cece18" fill="#575757">CPTE</text>
+  <rect id="svg_10" height="62" width="4.66667" y="14.42424" x="72.93507" opacity="undefined" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#2a4c3d"/>
+ </g>
+</svg>
