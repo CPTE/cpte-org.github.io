@@ -1,228 +1,216 @@
+
+
 <html>
-  <head>
-    <title>Just Crypto Ticker extension</title>
-    <link rel="favicon" href="favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-        @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
-
-        body {
-            font-family: "Montserrat", sans-serif;
-            min-height: 80vh;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-        background: linear-gradient(-45deg, #000000, #181818, #000000, #181818);
-	    background-size: 400% 400%;
-	    animation: gradient 15s ease infinite;
-        text-align: center;
-        color: white;
-        overflow-wrap: break-word;
-        }
-
-        * {
-	        font-family: "Montserrat", sans-serif !important;
-        }
-
-        .card {
-        background: #1d1e22;
-        border-radius: 2px;
-        display: inline-block;
-        height: 250;
-        margin: 1rem;
-        position: relative;
-        width: 300px;
-        }
-
-        .card-1 {
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        }
-
-        .card-1:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        }
-
-        table {
-        width: 100%;
-        }
-        td {
-        text-align: center;
-        padding: 16px;
-        }
-        a:link, a:visited {
-        color: green;
-        border: 5px dashed gray;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        }
-
-        a:hover, a:active {
-        background-color: green;
-        color: white;
-        border: 2px solid green;
-        }
-        .coinName {
-        color : rgb(255, 255, 255);
-        font-size:38px;
-        }
-    </style>
-    <script>
-        function showDonateDiv(){
-            var x = document.getElementById("donationDiv");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-        function openGithub(){
-            window.open("https://github.com/cpte-org/Crypto-price-ticker-extension"); 
-        }
-    </script>
-  </head>
-
-  <body>
-    <h1 class="text-light" style="font-size: 30px;">Just Crypto Ticker</h1>  
-    <img src="https://raw.githubusercontent.com/cpte-org/cpte-org.github.io/main/Demo.gif">
-    <br><br>
-    
-    <h3 class="text-light">
-        Cross-browser extension, displays cryptocurrency price in usd.
+   <head>
+      <title>Just Crypto Ticker extension</title>
+      <link rel="favicon" href="favicon.ico" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+         @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+         body {
+         font-family: "Montserrat", sans-serif;
+         min-height: 80vh;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         background: linear-gradient(-45deg, #000000, #181818, #000000, #181818);
+         background-size: 400% 400%;
+         animation: gradient 15s ease infinite;
+         text-align: center;
+         color: white;
+         overflow-wrap: break-word;
+         }
+         * {
+         font-family: "Montserrat", sans-serif !important;
+         }
+         .card {
+         background: #1d1e22;
+         border-radius: 2px;
+         display: inline-block;
+         height: 100%;
+         margin: 1rem;
+         position: relative;
+         width: 300px;
+         }
+         .card-1 {
+         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+         }
+         .card-1:hover {
+         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+         }
+         table {
+         width: 100%;
+         }
+         td {
+         text-align: center;
+         padding: 16px;
+         }
+         a:link, a:visited {
+         color: green;
+         border: 5px dashed gray;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         }
+         a:hover, a:active {
+         background-color: green;
+         color: white;
+         border: 2px solid green;
+         }
+         .coinName {
+         color : rgb(255, 255, 255);
+         font-size:38px;
+         }
+      </style>
+      <script>
+         function showDonateDiv(){
+             var x = document.getElementById("donationDiv");
+             if (x.style.display === "none") {
+                 x.style.display = "block";
+             } else {
+                 x.style.display = "none";
+             }
+         }
+         function openGithub(){
+             window.open("https://github.com/cpte-org/Crypto-price-ticker-extension"); 
+         }
+      </script>
+   </head>
+   <body>
+      <h1 class="text-light" style="font-size: 30px;">Just Crypto Ticker</h1>
+      <img src="https://raw.githubusercontent.com/cpte-org/cpte-org.github.io/main/Demo.gif">
+      <br><br>
+      <h3 class="text-light">
+         Cross-browser extension, displays cryptocurrency price in usd.
       </h3>
-        <br>
-        <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
-            <button class="d-block btn btn-outline-light" onclick="openGithub()"><i class="fab fa-github ml-2"></i> View Source</button>
-            <button class="d-block btn btn-outline-light" onclick="showDonateDiv()">Protect wildlife<i class="fa fa-heart ml-2"></i></button>
-        </div>
-    <div id="donationDiv" style="display: none; background-color: pink; font-weight: bold; padding: 10px; border-radius: 25px;">
-          - Bitcoin : 1DtTKJJosqgF4NzJHBqwMXGWoYwtpBoxpx
-          <br>
-          - Ethereum: 0x3AF9fE35D280ADA5a5edB1BEf3ED872a3231d73C
-          <br>
-          - Cardano : addr1q8h0we90q0n0zp8aupqxa662c43dvh04s7npu5yj9vltjm5jfsxx4s2ycuxm5629natextfld9cs54ms47carfk8r74q763jvs
-    </div>
-    </h2>
-    
-    <br><br>
-    
-
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/btc.png" alt="Bitcoin"> Bitcoin<p/>
-        <table>
+      <br>
+      <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+         <button class="d-block btn btn-outline-light" onclick="openGithub()"><i class="fab fa-github ml-2"></i> View Source</button>
+         <button class="d-block btn btn-outline-light" onclick="showDonateDiv()">Protect wildlife<i class="fa fa-heart ml-2"></i></button>
+      </div>
+      <div id="donationDiv" style="display: none; background-color: pink; font-weight: bold; padding: 10px; border-radius: 25px;">
+         - Bitcoin : 1DtTKJJosqgF4NzJHBqwMXGWoYwtpBoxpx
+         <br>
+         - Ethereum: 0x3AF9fE35D280ADA5a5edB1BEf3ED872a3231d73C
+         <br>
+         - Cardano : addr1q8h0we90q0n0zp8aupqxa662c43dvh04s7npu5yj9vltjm5jfsxx4s2ycuxm5629natextfld9cs54ms47carfk8r74q763jvs
+      </div>
+      </h2>
+      <br><br>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/btc.png" alt="Bitcoin"> Bitcoin
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-bitcoin-ticker-pro/edocckdppcejnpljkgohkdgniefflgfo" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/en-US/firefox/addon/btc/" target="_blank">Firefox</a></td>
-            <td><a href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-bitcoin-ticker-pro/edocckdppcejnpljkgohkdgniefflgfo" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/en-US/firefox/addon/btc/" target="_blank">Firefox</a></td>
+               <td><a href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/ada.png" alt="Cardano"> Cardano<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/ada.png" alt="Cardano"> Cardano
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-cardano-ticker-pro/acfodajggdfhmkgalgjijpbnpgnhpdeo" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/firefox/downloads/file/3680954/just_cardano_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
-            <td><a href="https://addons.opera.com/en/extensions/details/just-cardano-ticker-pro/" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-cardano-ticker-pro/acfodajggdfhmkgalgjijpbnpgnhpdeo" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/firefox/downloads/file/3680954/just_cardano_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
+               <td><a href="https://addons.opera.com/en/extensions/details/just-cardano-ticker-pro/" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/eth.png" alt="Ethereum"> Ethereum<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/eth.png" alt="Ethereum"> Ethereum
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-ethereum-ticker-pro/dgafljegcabiiplpjmfcepmndcabcgpm" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/firefox/downloads/file/3680960/just_ethereum_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
-            <td><a href="https://addons.opera.com/en/extensions/details/just-ethereum-ticker-pro/" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-ethereum-ticker-pro/dgafljegcabiiplpjmfcepmndcabcgpm" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/firefox/downloads/file/3680960/just_ethereum_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
+               <td><a href="https://addons.opera.com/en/extensions/details/just-ethereum-ticker-pro/" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/bch.png" alt="Bitcoin cash"> Bitcoin Cash<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/bch.png" alt="Bitcoin cash"> Bitcoin Cash
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-bitcoin-cash-ticker/ekgoigfalelgbdohgmolhmblfpljaagf" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744526/just_bitcoin_cash_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
-            <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-bitcoin-cash-ticker/ekgoigfalelgbdohgmolhmblfpljaagf" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744526/just_bitcoin_cash_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
+               <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/ltc.png" alt="Litecoin"> Litecoin<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/ltc.png" alt="Litecoin"> Litecoin
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-litecoin-ticker-pro/mbaihdegekjkhgajmamfgmgephoeppgb" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744529/just_litecoin_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
-            <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-litecoin-ticker-pro/mbaihdegekjkhgajmamfgmgephoeppgb" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744529/just_litecoin_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
+               <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/bsv.png" alt="Bitcoin sv"> Bitcoin SV<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/bsv.png" alt="Bitcoin sv"> Bitcoin SV
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-bitcoin-cash-sv-tick/nbpfcapniahpdkfmejpogoiamnconiik" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744531/just_bitcoin_cash_sv_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
-            <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-bitcoin-cash-sv-tick/nbpfcapniahpdkfmejpogoiamnconiik" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744531/just_bitcoin_cash_sv_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
+               <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/neo.png" alt="Neo"> Neo<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/neo.png" alt="Neo"> Neo
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-neo-ticker-pro/bpidplkdbojckdlhcjpckmgniebbfkkg" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744532/just_neo_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
-            <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-neo-ticker-pro/bpidplkdbojckdlhcjpckmgniebbfkkg" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744532/just_neo_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
+               <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/zec.png" alt="Zcash"> Zcash<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/zec.png" alt="Zcash"> Zcash
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-zcash-ticker-pro/glopllgnheolomicjjhiceipcdonpoae" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744534/just_zcash_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
-            <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-zcash-ticker-pro/glopllgnheolomicjjhiceipcdonpoae" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744534/just_zcash_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
+               <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/xmr.png" alt="Monero"> Monero<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/xmr.png" alt="Monero"> Monero
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-monero-ticker-pro/doljlldhgokeonmnlnmpcnplgcnjjeij" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/en-US/developers/addon/1aa1b3bc8b61474286e0/versions/5200176" target="_blank">Firefox</a></td>
-            <td><a href="xxxxxxxxx" target="_blank"target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-monero-ticker-pro/doljlldhgokeonmnlnmpcnplgcnjjeij" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/en-US/developers/addon/1aa1b3bc8b61474286e0/versions/5200176" target="_blank">Firefox</a></td>
+               <td><a href="xxxxxxxxx" target="_blank"target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-	
-    <div class="card card-1">
-        <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/etc.png" alt="Ethereum-classic"> ETC<p/>
-        <table>
+         </table>
+      </div>
+      <div class="card card-1">
+         <p class="coinName"><img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/etc.png" alt="Ethereum-classic"> ETC
+         <p/>
+         <table>
             <tr>
-            <td><a href="https://chrome.google.com/webstore/detail/just-ethereum-classic-tic/ejeemcbjgjnbmdckfkiofpiogmkejdja" target="_blank">Chrome</a></td>
-            <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744524/just_ethereum_classic_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
-            <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
+               <td><a href="https://chrome.google.com/webstore/detail/just-ethereum-classic-tic/ejeemcbjgjnbmdckfkiofpiogmkejdja" target="_blank">Chrome</a></td>
+               <td><a href="https://addons.mozilla.org/firefox/downloads/file/3744524/just_ethereum_classic_ticker_pro-2.0.4-fx.xpi" target="_blank">Firefox</a></td>
+               <td><a href="xxxxxxxxx" target="_blank">Opera</a></td>
             </tr>
-        </table>
-    </div>
-
-    <h6 class="text-light small font-weight-bold"><i class="fas fa-code"></i> Made with <i class="fas fa-heart"></i></h6>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
-  </body>
+         </table>
+      </div>
+      <h6 class="text-light small font-weight-bold"><i class="fas fa-code"></i> Made with <i class="fas fa-heart"></i></h6>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+   </body>
 </html>
+
