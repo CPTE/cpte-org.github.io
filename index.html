@@ -1,415 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-
-        <title>Just Crypto Ticker extension</title>
-
-        <meta name="description" content="Cross-browser extension that displays cryptocurrency price in dollars.">
-        <meta name="keywords" content="bitcoin,cardano,ethereum,neo,monero,bitcoinsv,crypto,ticker,price,cross-browser,Extension,Browser">
-
-        <meta charset="UTF-8">
-
-        <meta name="author" content="Nfl0">
-        <meta name="content-language" content="en">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
-
-        <link rel="stylesheet" type="text/css" href="css/styles-main.min.css">
-        <script defer src="js/scripts-fontawesome.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSXBPMW4Y5"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-LSXBPMW4Y5');
-        </script>
-    </head>
-
-    <body>
-
-        <div class="container">
-
-            <div class="container-header">
-
-                <a class="container-logo" href="index.html">
-                    <img class="logo" src="images/images-logo.svg" width="320" alt="cpte">
-                </a>
-
-                <a href="donate.html" class="btn btn-donate">
-                    <span class="fa-layers animation-donate">
-                        <i class="btn-icon far fa-donate" data-fa-transform="grow-2"></i>
-                        <i class="btn-icon far fa-heart" data-fa-transform="grow-2"></i>
-                    </span><span class="btn-text btn-text-important">Donate</span>
-                </a>
-
+   <head>
+      <title>Just Crypto Ticker extension</title>
+      <meta name="description" content="Cross-browser extension that displays cryptocurrency price in dollars.">
+      <meta name="keywords" content="bitcoin,cardano,ethereum,neo,monero,bitcoinsv,crypto,ticker,price,cross-browser,Extension,Browser">
+      <meta charset="UTF-8">
+      <meta name="author" content="Nfl0">
+      <meta name="content-language" content="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="css/styles-main.min.css">
+      <script defer src="js/scripts-fontawesome.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSXBPMW4Y5"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-LSXBPMW4Y5');
+      </script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="container-header">
+            <a class="container-logo" href="index.html">
+            <img class="logo" src="images/images-logo.svg" width="320" alt="cpte">
+            </a>
+            <a href="donate.html" class="btn btn-donate">
+            <span class="fa-layers animation-donate">
+            <i class="btn-icon far fa-donate" data-fa-transform="grow-2"></i>
+            <i class="btn-icon far fa-heart" data-fa-transform="grow-2"></i>
+            </span><span class="btn-text btn-text-important">Donate</span>
+            </a>
+         </div>
+         <br>
+         <img class="demo" src="images/demo.gif" alt="demo">
+         <div class="log" style="margin-bottom: 16px; margin-top: 16px;">
+            <div class="message message-information" style="background-color: #f8fcee; border: 2px solid #e9f0d7; border-radius: 10px; box-shadow: inset -2px -2px #dee6ca;">
+               <div class="message-body" style="background-color: transparent; color: #3e3e3e; font-weight: bold;">
+                  Cross-browser extension that displays cryptocurrency price in dollars.
+               </div>
             </div>
-
-            <br>
-            <img class="demo" src="images/demo.gif" alt="demo">
-            <div class="log" style="margin-bottom: 16px; margin-top: 16px;">
-
-                <div class="message message-information" style="background-color: #f8fcee; border: 2px solid #e9f0d7; border-radius: 10px; box-shadow: inset -2px -2px #dee6ca;">
-
-                    <div class="message-body" style="background-color: transparent; color: #3e3e3e; font-weight: bold;">
-                        Cross-browser extension that displays cryptocurrency price in dollars.
-                    </div>
-
-                </div>
-
+         </div>
+         <br>
+         To install the free extension, please select your web browser:
+         <br><br>
+         <div style="overflow: hidden; margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 9px;">
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/BTC/icon-32.png" alt="Bitcoin">
+                     <span>Bitcoin BTC</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://addons.mozilla.org/en-US/firefox/addon/btc/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-bitcoin-ticker-pro/edocckdppcejnpljkgohkdgniefflgfo" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/ETH/icon-32.png" alt="Ethereum">
+                     <span>Ethereum ETH</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_ethereum_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-ethereum-ticker-pro/dgafljegcabiiplpjmfcepmndcabcgpm" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-ethereum-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/LTC/icon-32.png" alt="Litecoin">
+                     <span>Litecoin LTC</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_litecoin_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-litecoin-ticker-pro/mbaihdegekjkhgajmamfgmgephoeppgb" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/DOGE/icon-32.png" alt="Thorchain">
+                     <span>Dogecoin DOGE</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_dogecoin_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-dogecoin-ticker-pro/ganhfpkgiadcdpkechelfbmjhnonagel" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/BCH/icon-32.png" alt="BitcoinCash">
+                     <span>Bitcoin BCH</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_bitcoin_cash_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-bitcoin-cash-ticker/ekgoigfalelgbdohgmolhmblfpljaagf" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/ZEC/icon-32.png" alt="Zcash">
+                     <span>Zcash ZEC</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_zcash_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-zcash-ticker-pro/glopllgnheolomicjjhiceipcdonpoae" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/LUNA/icon-32.png" alt="Luna">
+                     <span>Terra LUNA</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_terra_luna_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-terra-luna-ticker/ehncoghdkhjpbmkpfjpeddpiaimhlpef" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/XMR/icon-32.png" alt="Monero">
+                     <span>Monero XMR</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_monero_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-monero-ticker-pro/doljlldhgokeonmnlnmpcnplgcnjjeij" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/RUNE/icon-32.png" alt="Thorchain">
+                     <span>Thorchain RUNE</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_thorchain_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-thorchain-ticker-pro/cooihnnnljadnjhddhloapfilnlfabdf" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/XHV/icon-32.png" alt="Haven">
+                     <span>Haven XHV</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_haven_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-haven-ticker-pro/coieiahiaogfcgnkabllbjmphodkeimn" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/ENS/icon-32.png" alt="Monero">
+                     <span>Ethereum Name Service ENS</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_ethereum_name_service_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-ethereum-name-service-ticker-pro/pekmejpiobbbgndeoojndeahdljbgpho" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/ada.png" alt="Cardano">
+                     <span>Cardano ADA</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_cardano_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-cardano-ticker-pro/acfodajggdfhmkgalgjijpbnpgnhpdeo" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-cardano-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/BSV/icon-32.png" alt="BitcoinSV">
+                     <span>Bitcoin SV BSV</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_bitcoin_cash_sv_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-bitcoin-cash-sv-tick/nbpfcapniahpdkfmejpogoiamnconiik" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/NEO/icon-32.png" alt="NEO">
+                     <span>NEO</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_neo_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-neo-ticker-pro/bpidplkdbojckdlhcjpckmgniebbfkkg" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+               <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
+                  <td class="coin-name">
+                     <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/ETC/icon-32.png" alt="Ethereum-Classic">
+                     <span>Ethereum Classic ETC</span>
+                  </td>
+                  <td>
+                     <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_ethereum_classic_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
+                     <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-ethereum-classic-tic/ejeemcbjgjnbmdckfkiofpiogmkejdja" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
+                     <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
+                     </a>
+                     <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
+                     <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
+                     </a>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <span class="note">Add coin? <a href="https://github.com/cpte-org/cpte-org.github.io/issues" target="_blank">Request</a>, or <a href="https://github.com/cpte-org/Crypto-price-ticker-extension" target="_blank">Contribute</a>.</span>
+         <br><br>
+         <div class="log">
+            <div class="message message-information">
+               <div class="message-header">
+                  <i class="information-icon far fa-shield-alt fa-lg"></i>
+               </div>
+               <div class="message-body">
+                  <b>Tip:</b> Click on the extension icon to toggle between Abbreviated (13k) and Four digit value (1317)
+               </div>
             </div>
-
-            <br>
-
-            To install the free extension, please select your web browser:
-
-            <br><br>
-
-            <div style="overflow: hidden; margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 9px;">
-                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/BTC/icon-32.png" alt="Bitcoin">
-                            <span>Bitcoin BTC</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://addons.mozilla.org/en-US/firefox/addon/btc/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-bitcoin-ticker-pro/edocckdppcejnpljkgohkdgniefflgfo" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/ETH/icon-32.png" alt="Ethereum">
-                            <span>Ethereum ETH</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_ethereum_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-ethereum-ticker-pro/dgafljegcabiiplpjmfcepmndcabcgpm" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-ethereum-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/LTC/icon-32.png" alt="Litecoin">
-                            <span>Litecoin LTC</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_litecoin_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-litecoin-ticker-pro/mbaihdegekjkhgajmamfgmgephoeppgb" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/DOGE/icon-32.png" alt="Thorchain">
-                            <span>Dogecoin DOGE</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_dogecoin_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-dogecoin-ticker-pro/ganhfpkgiadcdpkechelfbmjhnonagel" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/BCH/icon-32.png" alt="BitcoinCash">
-                            <span>Bitcoin BCH</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_bitcoin_cash_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-bitcoin-cash-ticker/ekgoigfalelgbdohgmolhmblfpljaagf" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/ZEC/icon-32.png" alt="Zcash">
-                            <span>Zcash ZEC</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_zcash_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-zcash-ticker-pro/glopllgnheolomicjjhiceipcdonpoae" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/LUNA/icon-32.png" alt="Luna">
-                            <span>Terra LUNA</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_terra_luna_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-terra-luna-ticker/ehncoghdkhjpbmkpfjpeddpiaimhlpef" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/XMR/icon-32.png" alt="Monero">
-                            <span>Monero XMR</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_monero_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-monero-ticker-pro/doljlldhgokeonmnlnmpcnplgcnjjeij" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/RUNE/icon-32.png" alt="Thorchain">
-                            <span>Thorchain RUNE</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_thorchain_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-thorchain-ticker-pro/cooihnnnljadnjhddhloapfilnlfabdf" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/XHV/icon-32.png" alt="Haven">
-                            <span>Haven XHV</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_haven_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-haven-ticker-pro/coieiahiaogfcgnkabllbjmphodkeimn" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/ENS/icon-32.png" alt="Monero">
-                            <span>Ethereum Name Service ENS</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_ethereum_name_service_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-ethereum-name-service-ticker-pro/pekmejpiobbbgndeoojndeahdljbgpho" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/ada.png" alt="Cardano">
-                            <span>Cardano ADA</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_cardano_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-cardano-ticker-pro/acfodajggdfhmkgalgjijpbnpgnhpdeo" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-cardano-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/BSV/icon-32.png" alt="BitcoinSV">
-                            <span>Bitcoin SV BSV</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_bitcoin_cash_sv_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-bitcoin-cash-sv-tick/nbpfcapniahpdkfmejpogoiamnconiik" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/NEO/icon-32.png" alt="NEO">
-                            <span>NEO</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_neo_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-neo-ticker-pro/bpidplkdbojckdlhcjpckmgniebbfkkg" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr style="border-bottom: 1px solid #ccc; line-height: 1.8em;">
-                        <td class="coin-name">
-                            <img src="https://gitlab.com/nfl0/crypto-logos/-/raw/master/ETC/icon-32.png" alt="Ethereum-Classic">
-                            <span>Ethereum Classic ETC</span>
-                        </td>
-                        <td>
-                            <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_ethereum_classic_ticker_pro-2.0.4-fx.xpi" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Mozilla Firefox">
-                                <i class="fab fa-firefox-browser" style="font-size: 42px; color: #ec8712;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://chrome.google.com/webstore/detail/just-ethereum-classic-tic/ejeemcbjgjnbmdckfkiofpiogmkejdja" target="blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Google Chrome">
-                                <i class="fab fa-chrome" style="font-size: 42px; color: #4687f4;"></i>
-                            </a>
-            
-                            <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" style="padding: 14px 21px 18px 13px; height: 73px; width: 73px; margin-right: 0;" title="Opera">
-                                <i class="fab fa-opera" style="font-size: 42px; color: #dd4e53;"></i>
-                            </a>
-
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-
-            <span class="note">Add coin? <a href="https://github.com/cpte-org/cpte-org.github.io/issues" target="_blank">Request</a>, or <a href="https://github.com/cpte-org/Crypto-price-ticker-extension" target="_blank">Contribute</a>.</span>
-
-            <br><br>
-
-            <div class="log">
-
-                <div class="message message-information">
-
-                    <div class="message-header">
-                        <i class="information-icon far fa-shield-alt fa-lg"></i>
-                    </div>
-
-                    <div class="message-body">
-                        <b>Tip:</b> Click on the extension icon to toggle between Abbreviated (13k) and Four digit value (1317)
-                    </div>
-
-                </div>
-
-            </div>
-
-            <br>
-
-            <div class="btn-bar">
-
-                <a target="_blank" href="https://github.com/cpte-org/Crypto-price-ticker-extension" class="btn btn-github"><i class="btn-icon fab fa-gitlab" data-fa-transform="grow-2"></i><span class="btn-text">GitHub</span></a>
-                <a href="contact.html" class="btn btn-contact"><i class="btn-icon far fa-envelope-open" data-fa-transform="grow-2"></i><span class="btn-text">Contact</span></a>
-                <a href="https://github.com/nfl0" target="_blank" class="btn btn-author"><i class="btn-icon far fa-user-circle" data-fa-transform="grow-3"></i><span class="btn-text">Author</span></a>
-
-            </div>
-
-        </div>
-
-    </body>
-
+         </div>
+         <br>
+         <div class="btn-bar">
+            <a target="_blank" href="https://github.com/cpte-org/Crypto-price-ticker-extension" class="btn btn-github"><i class="btn-icon fab fa-gitlab" data-fa-transform="grow-2"></i><span class="btn-text">GitHub</span></a>
+            <a href="contact.html" class="btn btn-contact"><i class="btn-icon far fa-envelope-open" data-fa-transform="grow-2"></i><span class="btn-text">Contact</span></a>
+            <a href="https://github.com/nfl0" target="_blank" class="btn btn-author"><i class="btn-icon far fa-user-circle" data-fa-transform="grow-3"></i><span class="btn-text">Author</span></a>
+         </div>
+      </div>
+   </body>
 </html>
