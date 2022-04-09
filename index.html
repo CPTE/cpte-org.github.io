@@ -73,6 +73,8 @@
                </div>
                <div class="message-body">
                   <b>Tip:</b> Click on the extension icon to toggle between Abbreviated (13k) and Four digit value (1317)
+                  <br>
+                  <b>Notice:</b> Some items may not be available in all browsers. Please let us know if you find any issues.
                </div>
             </div>
          </div>
@@ -107,7 +109,7 @@
             tr.getElementsByTagName("img")[0].src = "https://gitlab.com/nfl0/crypto-logos/-/raw/master/" + coinSuffix[i] + "/icon-32.png";
             coinNameCapitalized = coinName[i].charAt(0).toUpperCase() + coinName[i].slice(1);
             tr.getElementsByTagName("span")[0].innerHTML = "&nbsp &nbsp" + coinNameCapitalized + " " + "<small>" + coinSuffix[i] + "</small>";
-            
+
             if(firefoxStatus==1)
                tr.getElementsByTagName("a")[0].href = "https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_" + coinName[i] +"_ticker_pro-2.0.4-fx.xpi";
             else{
