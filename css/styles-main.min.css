@@ -216,6 +216,10 @@ a:hover {
     font-size: 42px;
     color: #dd4e53;
 }
+.fa-linux {
+    font-size: 42px;
+    color: #0d6efd;
+}
 
 .btn-browser {
     padding: 14px 21px 18px 13px;

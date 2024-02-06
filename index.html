@@ -57,8 +57,9 @@
                   </td>
                   <td>
                      <a class="btn-browser" href="https://github.com/cpte-org/Crypto-price-ticker-extension/raw/master/Firefox-signed/just_bitcoin_ticker_pro-2.0.4-fx.xpi" target="_blank" title="Mozilla Firefox"><i class="fab fa-firefox-browser"></i></a>
-                     <a class="btn-browser" href="chrome.google.com/webstore/detail/edocckdppcejnpljkgohkdgniefflgfo" target="_blank" title="Google Chrome"><i class="fab fa-chrome"></i></a>
+                     <a class="btn-browser" href="https://chrome.google.com/webstore/detail/edocckdppcejnpljkgohkdgniefflgfo" target="_blank" title="Google Chrome"><i class="fab fa-chrome"></i></a>
                      <a class="btn-browser" href="https://addons.opera.com/en/extensions/details/just-bitcoin-ticker-pro/" target="_blank" title="Opera"><i class="fab fa-opera"></i></a>
+                     <a class="btn-browser" href="https://store.kde.org/p/2127626" target="_blank" title="Kde"><i class="fab fa-linux"></i></a>
                   </td>
                </tr>
 
@@ -92,8 +93,9 @@
          const coinSuffix = ["BTC","ETH","BCH","LTC","ZEC","ADA","XMR","RUNE","DOGE","SOL","FTM","POL","AVA","MATIC","ATOM","XTZ","KSM","MOVR","KDA"];
          const chromeId = ["edocckdppcejnpljkgohkdgniefflgfo","dgafljegcabiiplpjmfcepmndcabcgpm","ekgoigfalelgbdohgmolhmblfpljaagf","mbaihdegekjkhgajmamfgmgephoeppgb","glopllgnheolomicjjhiceipcdonpoae","acfodajggdfhmkgalgjijpbnpgnhpdeo","doljlldhgokeonmnlnmpcnplgcnjjeij","cooihnnnljadnjhddhloapfilnlfabdf","ganhfpkgiadcdpkechelfbmjhnonagel","ijkgnghfcjkghhdkbgfjibooiflohcif","ecglngkalkooehhajdopneiofbgakfoe","cmohhbkheacpenaieifolaffbldifdcb","amjbppcggjdnpgbfhjmicmaneifodlld","ofgicionacifegbldflkoaamkibgonfd","anihnbdnfjmejeihegajgihfgljgbfnf","kmbhkejclnhfblhnecelhmpmnfjipmlg","gfhnabilpflnceoknielgdaaiifcipid","mpmdgfbojhjkmgmahblgkmkdmcdjbkcd","ahlnjfleakmkcdgpkpijklfkecmmfibk"];
          const operaId = ["bitcoin","ethereum","bitcoin-cash","litecoin","zcash","cardano","monero","thorchain","dogecoin","solana","fantom","polkadot","avalanche","polygon","cosmos","tezos","kusama","moonriver","kadena"];
+         const kdeId = ["0", "0", "0", "0", "2127626", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
          // coinStatus: GNU Chmod octal format. store availability of each coin.
-         const coinStatus = ["111", "111", "110", "110", "111", "111", "110", "110", "110", "110", "110", "110", "110", "110", "110", "110", "110", "110", "110"];
+         const coinStatus = ["1110", "1110", "1100", "1100", "1111", "1110", "1100", "1100", "1100", "1100", "1100", "1100", "1100", "1100", "1100", "1100", "1100", "1100", "1100"];
 
          var coinNameCapitalized;
 
@@ -105,6 +107,7 @@
             var firefoxStatus = status[0];
             var chromeStatus = status[2];
             var operaStatus = status[4];
+            var kdeStatus = status[6];
 
             tr.getElementsByTagName("img")[0].src = "https://gitlab.com/nfl0/crypto-logos/-/raw/master/" + coinSuffix[i] + "/icon-32.png";
             coinNameCapitalized = coinName[i].charAt(0).toUpperCase() + coinName[i].slice(1);
@@ -127,6 +130,12 @@
             else{
                tr.getElementsByTagName("a")[2].href = "#notice";
                tr.getElementsByTagName("a")[2].target = "";
+            }
+            if(kdeStatus==1)
+               tr.getElementsByTagName("a")[3].href = "https://store.kde.org/p/" + kdeId[i];
+            else{
+               tr.getElementsByTagName("a")[3].href = "#notice";
+               tr.getElementsByTagName("a")[3].target = "";
             }
             tr.parentNode.insertBefore(tr.cloneNode(true), tr);
          }
